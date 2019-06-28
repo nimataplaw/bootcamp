@@ -1,0 +1,33 @@
+p {
+    width: 50px;
+    height: 50px;
+    background-color: #1abc9c;
+    color: #ecf0f1;
+    border: 2px solid #2c3e50;
+}
+
+.transformedWithScale:hover {
+    background-color: #3498db;
+    transform: scale(1.5);
+    /*scaleX*/
+    /*scaleY*/
+    /*scale(2,1)*/
+    transition-property: background-color, transform;
+    transition-duration: 3s, 1s;
+    transition-delay: 2s, 0.5ms;
+}
+.transformedWithScaleDifferentCenter:hover {
+    background-color: #3411aa;
+    transform: scale(2);
+    transform-origin: 0 0;
+    /*transform-origin: left;*/
+    /*transform-origin: left bottom;*/
+    transform-origin: left top;
+    /*transform-origin: right top;*/
+    /*scaleX*/
+    /*scaleY*/
+    /*scale(2,1)*/
+    transition-property: background-color, transform;
+    transition-duration: 3s, 1s;
+    transition-delay: 2s, 0.5ms;
+}
